@@ -1,0 +1,426 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      href="https://sdk.bitmoji.com/render/panel/fa95e632-d68f-4e15-81a3-0924a6f41992-9a0130d6-d651-4957-b8b7-db37e410f5fa-v1.png?transparent=1&palette=1"
+    />
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@900&display=swap" rel="stylesheet">
+    <!-- =====BOX ICONS===== -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio website</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+
+    <style>
+      body {
+        padding: 10% 3% 10% 3%;
+        text-align: center;
+      }
+      img {
+        height: 140px;
+        width: 140px;
+      }
+      h1 {
+        color: #32a852;
+      }
+      .mode {
+        float: right;
+      }
+      .change {
+        cursor: pointer;
+        border: 1px solid #555;
+        border-radius: 40%;
+        width: 20px;
+        text-align: center;
+        padding: 5px;
+        margin-left: 8px;
+      }
+      .dark {
+        background-color: #222;
+        color: #e6e6e6;
+      }
+
+      .cards {
+        width: 400px;
+        height: 400px;
+        background: url("https://sdk.bitmoji.com/render/panel/fa95e632-d68f-4e15-81a3-0924a6f41992-9a0130d6-d651-4957-b8b7-db37e410f5fa-v1.png?transparent=1&palette=1")
+          no-repeat;
+        display: inline-block;
+      }
+      .cards:hover {
+        background: url("https://sdk.bitmoji.com/render/panel/72abdd26-580d-4f52-b598-4f89b7f9619b-9a0130d6-d651-4957-b8b7-db37e410f5fa-v1.png?transparent=1&palette=1")
+          no-repeat;
+      }
+    </style>
+  </head>
+  <body>
+    <!--===== HEADER =====-->
+    <header class="l-header">
+      <nav class="nav bd-grid">
+        <div>
+          <a style="font-family: 'Titillium Web', sans-serif;font-size:30px" href="#" class="nav__logo">Amey G.</a>
+        </div>
+
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#home" class="nav__link active">Home</a>
+            </li>
+            <li class="nav__item">
+              <a href="#about" class="nav__link">About</a>
+            </li>
+            <li class="nav__item">
+              <a href="#skills" class="nav__link">Skills</a>
+            </li>
+            <li class="nav__item">
+              <a href="#work" class="nav__link">Projects</a>
+            </li>
+            <li class="nav__item">
+              <a href="#contact" class="nav__link">Contact</a>
+            </li>
+            <li class="nav__item">
+              <div class="mode">
+                Dark mode:
+                <span class="change">OFF</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <script>
+          $(".change").on("click", function () {
+            if ($("body").hasClass("dark")) {
+              $("body").removeClass("dark");
+              $(".change").text("OFF");
+            } else {
+              $("body").addClass("dark");
+              $(".change").text("ON");
+            }
+          });
+        </script>
+        <div class="nav__toggle" id="nav-toggle">
+          <i class="bx bx-menu"></i>
+        </div>
+      </nav>
+    </header>
+
+    <main class="l-main">
+      <!--===== HOME =====-->
+      <section class="home bd-grid" id="home">
+        <div class="home__data">
+          <h1 class="home__title">
+            Hi,<br />I'am <span class="home__title-color">Amey</span><br />
+            I am student.
+          </h1>
+
+          <a href="#contact" class="button">Contact</a>
+        </div>
+
+        <div class="home__social">
+          
+        </div>
+      </section>
+
+      <!--===== ABOUT =====-->
+      <section class="about section" id="about">
+        <h2 class="section-title">About</h2>
+
+        <div class="about__container bd-grid">
+          <div class="about__img">
+            <div class="cards"></div>
+          </div>
+
+          <div>
+            <h2 class="about__subtitle">My name is Amey.</h2>
+            <p style="font-family: 'League Spartan', sans-serif;font-size:20px;" class="about__text">
+              I am a University student in second year in IT branch. My fields
+              of interest are Data Science, Web Development, Android and Ios
+              development. Currently I am working on React and React Native
+              projects.I am working under a team on a app which is useful to book
+              appointments.<h3>I live in Pune</h3>.
+            </p>
+
+          </div>
+        </div>
+      </section>
+
+      <!--===== SKILLS =====-->
+      <section style="height: 500px" class="skills section" id="skills">
+        <h2 class="section-title">Skills</h2>
+        <!DOCTYPE html>
+        <html lang="en" dir="ltr">
+          <head>
+            <meta charset="utf-8" />
+            <link rel="stylesheet" href="style.css" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1.0"
+            />
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-circle-progress/1.2.2/circle-progress.min.js"></script>
+          </head>
+          <body>
+            <div style="justify-content: space-evenly" class="wrapper">
+              <div class="card">
+                <div class="circle">
+                  <div class="bar"></div>
+                  <div class="box"><span></span></div>
+                </div>
+              </div>
+              <div class="card js">
+                <div class="circle">
+                  <div class="bar"></div>
+                  <div class="box"><span></span></div>
+                </div>
+              </div>
+              <div class="card react">
+                <div class="circle">
+                  <div class="bar"></div>
+                  <div class="box"><span></span></div>
+                </div>
+              </div>
+            </div>
+            <div
+              style="
+                display: flex;
+                flex-direction: row;
+                justify-content: space-evenly;
+              "
+              class="wrapper"
+            >
+              <img
+                style="height: 150px; width: 150px"
+                src="http://assets.stickpng.com/images/5848152fcef1014c0b5e4967.png"
+              />
+              <img
+                style="height: 150px; width: 150px"
+                src="https://cdn.auth0.com/blog/react-js/react.png"
+              />
+              <img
+                style="height: 150px; width: 150px"
+                src="https://o.remove.bg/downloads/5a7e1781-1c62-4e7d-9465-e19e0377f34f/78-788026_illustration-for-creating-the-library-and-adding-dependencies-removebg-preview.png"
+              />
+            </div>
+
+            <script>
+              let options = {
+                startAngle: -1.55,
+                size: 150,
+                value: 0.85,
+                fill: { gradient: ["#167DD1", "#059CFE"] },
+              };
+              $(".circle .bar")
+                .circleProgress(options)
+                .on(
+                  "circle-animation-progress",
+                  function (event, progress, stepValue) {
+                    $(this)
+                      .parent()
+                      .find("span")
+                      .text(String(stepValue.toFixed(2).substr(2)) + "%");
+                  }
+                );
+              $(".js .bar").circleProgress({
+                value: 0.7,
+              });
+              $(".react .bar").circleProgress({
+                value: 0.6,
+              });
+            </script>
+          </body>
+        </html>
+      </section>
+
+      <!--===== WORK =====-->
+      <section class="work section" id="work">
+        <h2 class="section-title">Projects</h2>
+
+        <div class="work__container bd-grid">
+          <div class="container">
+            <img
+              class="image"
+              src="data:image/png;base64,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"
+              alt=""
+            />
+            <div class="overlay">
+              <div style="color: red, font-weight bold" class="text">
+                <a
+                  class="text"
+                  href="https://netflix-clone-74e6a.web.app"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Netflix Clone
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="container">
+            <img
+              class="image"
+              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRV1S65M4WjOjSIO4EpvJGy870wvYyVXgYv5w&usqp=CAU"
+              alt=""
+            />
+            <div class="overlay">
+              <a
+                class="text"
+                href="https://superheros-vs-supervillans.web.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >SuperHero vs SuperVillans</a
+              >
+            </div>
+          </div>
+          <div class="container">
+            <img
+              class="image"
+              src="https://www.teahub.io/photos/full/220-2205714_get-the-latest-movies-data-src-kodi-tv.jpg"
+              alt=""
+            />
+            <div class="overlay">
+              <a
+                class="text"
+                href="https://moviesmania-4d51e.web.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >MovieMania</a
+              >
+            </div>
+          </div>
+          <div class="container">
+            <img
+              class="image"
+              src="https://static.businessworld.in/article/article_extra_large_image/1585800027_z1BUns_200324_D_HN545_003.JPG"
+              alt=""
+            />
+            <div class="overlay">
+              <a
+                class="text"
+                href="https://cocid-19-tracker.web.app/"
+                target="_blank"
+                rel="noopener noreferrer"
+                >COVID-19 Tracker</a
+              >
+            </div>
+          </div>
+          <div class="container">
+            <img
+              class="image"
+              src="https://www.slashgear.com/wp-content/uploads/2021/01/signal-logo.jpg"
+              alt=""
+            />
+            <div class="overlay">
+              <a class="text" target="_blank" rel="noopener noreferrer"
+                >Signal Clone</a
+              >
+            </div>
+          </div>
+          <div
+            style="
+              display: flex;
+              flex-direction: row;
+              align-items: center;
+              justify-content: center;
+            "
+            class="container"
+          >
+            <img
+              class="images"
+              src="https://raw.githubusercontent.com/ameygodse007/TextEditor.github.io/master/img.jpg"
+              alt=""
+            />
+            <div class="overlay">
+              <a
+                href="https://ameygodse007.github.io/TextEditor.github.io/"
+                class="text"
+                target="_blank"
+                rel="noopener noreferrer"
+                >Text Editor</a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!--===== CONTACT =====-->
+      <section class="contact section" id="contact">
+        <h2 class="section-title">Contact</h2>
+
+        <div class="contact__container bd-grid">
+          <form action="" class="contact__form">
+            <input type="text" placeholder="Name" class="contact__input" />
+            <input type="mail" placeholder="Email" class="contact__input" />
+            <textarea
+              name=""
+              id=""
+              cols="0"
+              rows="10"
+              class="contact__input"
+            ></textarea>
+            <input
+              type="button"
+              value="Send"
+              class="contact__button button"
+            />
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <!--===== FOOTER =====-->
+    <footer class="footer">
+      <p class="footer__title">Amey</p>
+      <div class="footer__social">
+        <a href="https://www.facebook.com/amey.godse.5/" class="footer__icon" target="_blank"
+        rel="noopener noreferrer"><i class="bx bxl-facebook"></i></a>
+        <a href="https://www.instagram.com/ameyzone10/" class="footer__icon" target="_blank"
+        rel="noopener noreferrer"><i class="bx bxl-instagram"></i></a>
+        <a href="https://twitter.com/amey_godse" class="footer__icon" target="_blank"
+        rel="noopener noreferrer"><i class="bx bxl-twitter"></i></a>
+        <a
+            href="https://www.linkedin.com/in/mrameygodse/"
+            class="footer__icon"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><i class="bx bxl-linkedin"></i
+          ></a>
+
+          <a
+            href="https://github.com/ameygodse007"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="footer__icon"
+            ><i class="bx bxl-github"></i
+          ></a>
+      </div>
+      
+    </footer>
+
+    <!--===== SCROLL REVEAL =====-->
+    <script src="https://unpkg.com/scrollreveal"></script>
+
+    <!--===== MAIN JS =====-->
+    <script src="assets/js/main.js"></script>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="/__/firebase/8.3.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="/__/firebase/8.3.0/firebase-analytics.js"></script>
+
+<!-- Initialize Firebase -->
+<script src="/__/firebase/init.js"></script>
+  </body>
+</html>
