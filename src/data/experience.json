@@ -1,0 +1,52 @@
+{
+  "experience": [
+    {
+      "id": 0,
+      "link": "https://zopnik.com/",
+      "company": "Zopnik",
+      "title": "React Native and React Js Developer",
+      "dateFrom": "May 2021",
+      "dateTo": "July 2021",
+      "info": [
+        "Responsible for create an admin protal using React Js.",
+        "Creating an android application using React Native and integrating it with APIS."
+      ],
+      "stack": ["React Js", "Firebase", "React Native"],
+      "logoheight": 80,
+      "colourPrimary": "linear-gradient(to bottom, #f4592b, #f28d25)",
+      "colourSecondary": "#F2F2F2"
+    },
+    {
+      "id": 1,
+      "link": "https://dwebbox.com/",
+      "company": "D-Webbox",
+      "title": "Flutter Developer",
+      "dateFrom": "Octomber 2021",
+      "dateTo": "April 2022",
+      "info": [
+        "Integrating front end with back end.",
+        "Building android applications using Flutter framework."
+      ],
+      "stack": ["Flutter", "Firebase", "Github", "Jira"],
+      "logowidth": 80,
+      "colourPrimary": "#FFC81B",
+      "colourSecondary": "#F2F2F2"
+    },
+    {
+      "id": 2,
+      "link": "http://www.persistent.com/",
+      "company": "Persistent",
+      "title": "AWS Cloud developer",
+      "dateFrom": "June 2022",
+      "dateTo": "August 2022",
+      "info": [
+        "Create a devsecops pipeline using AWS cloud.",
+        "Using the AWS tools wisely for building projects. "
+      ],
+      "stack": ["AWS", "Node Js"],
+      "logowidth": 80,
+      "colourPrimary": "#4A4750",
+      "colourSecondary": "#4A4750"
+    }
+  ]
+}
